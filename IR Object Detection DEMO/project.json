@@ -1,0 +1,68 @@
+[
+  {
+    "id": 2,
+    "type": "while_loop",
+    "x": 58.97748709610113,
+    "y": 236.18988049326998,
+    "nextId": null,
+    "condType": "text",
+    "condition": "True",
+    "sensor": "button",
+    "pin": "4",
+    "op": "==",
+    "thresh": "1",
+    "childStartId": 6,
+    "children": [
+      {
+        "id": 6,
+        "type": "if_logic",
+        "x": 356.4263247449004,
+        "y": 161.08669041640383,
+        "nextId": 7,
+        "condType": "sensor",
+        "condition": "True",
+        "sensor": "pir",
+        "pin": "4",
+        "op": "==",
+        "thresh": "1",
+        "childStartId": 10,
+        "children": [
+          {
+            "id": 10,
+            "type": "led",
+            "x": 703.2580917669362,
+            "y": 179.60528363315655,
+            "nextId": null,
+            "pin": "2",
+            "state": "1"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "type": "if_logic",
+        "x": 617.744264199149,
+        "y": 442.32183479788137,
+        "nextId": null,
+        "condType": "sensor",
+        "condition": "True",
+        "sensor": "pir",
+        "pin": "4",
+        "op": "==",
+        "thresh": "0",
+        "childStartId": 11,
+        "children": [
+          {
+            "id": 11,
+            "type": "led",
+            "x": 938.8558870781974,
+            "y": 499.935217078584,
+            "nextId": null,
+            "pin": "2",
+            "state": "0"
+          }
+        ]
+      }
+    ]
+  }
+]
