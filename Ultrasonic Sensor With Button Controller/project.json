@@ -1,0 +1,70 @@
+[
+  {
+    "id": 2,
+    "type": "while_loop",
+    "x": 58.97748709610113,
+    "y": 236.18988049326998,
+    "nextId": null,
+    "condType": "text",
+    "condition": "True",
+    "sensor": "button",
+    "pin": "4",
+    "op": "==",
+    "thresh": "1",
+    "childStartId": 6,
+    "children": [
+      {
+        "id": 6,
+        "type": "if_logic",
+        "x": 348.1957870660583,
+        "y": 99.35803929628008,
+        "nextId": 7,
+        "condType": "sensor",
+        "condition": "True",
+        "sensor": "button",
+        "pin": "4",
+        "op": "==",
+        "thresh": "1",
+        "childStartId": 12,
+        "children": [
+          {
+            "id": 12,
+            "type": "ultrasonic",
+            "x": 687.8258866012173,
+            "y": 96.2716088595583,
+            "nextId": null,
+            "trig": "5",
+            "echo": "18",
+            "assignVar": ""
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "type": "if_logic",
+        "x": 617.744264199149,
+        "y": 442.32183479788137,
+        "nextId": null,
+        "condType": "sensor",
+        "condition": "True",
+        "sensor": "button",
+        "pin": "4",
+        "op": "==",
+        "thresh": "0",
+        "childStartId": 13,
+        "children": [
+          {
+            "id": 13,
+            "type": "ultrasonic",
+            "x": 928.5676937868006,
+            "y": 440.26422157101484,
+            "nextId": null,
+            "trig": "5",
+            "echo": "18",
+            "assignVar": ""
+          }
+        ]
+      }
+    ]
+  }
+]
